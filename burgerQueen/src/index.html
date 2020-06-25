@@ -9,5 +9,24 @@
 </head>
 <body>
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-firestore.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBOSsPX9HcrwDjiN8DFNH039O6WfWLQVWA",
+      authDomain: "itadakimasu-217a1.firebaseapp.com",
+      databaseURL: "https://itadakimasu-217a1.firebaseio.com",
+      projectId: "itadakimasu-217a1",
+      storageBucket: "itadakimasu-217a1.appspot.com",
+      messagingSenderId: "783493677621",
+      appId: "1:783493677621:web:83896bc49636b4ad28677c"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
 </body>
 </html>
