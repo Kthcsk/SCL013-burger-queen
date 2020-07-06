@@ -1,0 +1,20 @@
+.container-waiter-order{
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-waiter{
+  background: rgba(0, 123, 155, 0.97);
+  width: 711px;
+  height: 658px;
+}
+
+.banner-container{
+  background: #006B87;
+  width: auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
