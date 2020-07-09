@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { Observable } from 'rxjs';
+import { ConectionService } from '../services/conection.service';
 
 @Component({
   selector: 'app-waiter',
@@ -8,9 +7,14 @@ import { Observable } from 'rxjs';
   styleUrls: ['./waiter.component.css']
 })
 export class WaiterComponent implements OnInit {
-  orders: Observable<any[]>;
-  constructor(firestore: AngularFirestore) {
-    this.orders = firestore.collection('orders').valueChanges();
+
+  ordersFields: any;  //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
+
+  constructor(private conection: ConectionService){
+    this.conection.waiterOrder().subscribe(o => {
+      this.ordersFields = o;
+      console.log(this.ordersFields);
+    })
   }
 
   ngOnInit(): void {
