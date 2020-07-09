@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "itadakimasu-76cf7": {
+      "hosting": {
+        "burgerQueen": [
+          "itadakimasu-76cf7"
+        ]
+      }
+    }
+  }
+}
