@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AngularFirestore } from '@angular/fire/firestore';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-waiter',
@@ -6,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./waiter.component.css']
 })
 export class WaiterComponent implements OnInit {
-
-  constructor() { }
+  orders: Observable<any[]>;
+  constructor(firestore: AngularFirestore) {
+    this.orders = firestore.collection('orders').valueChanges();
+  }
 
   ngOnInit(): void {
   }

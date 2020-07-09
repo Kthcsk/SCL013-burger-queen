@@ -5,6 +5,11 @@
       <h1>MESERO</h1>
     </div>
   <div class="client-info">
+    <ul>
+      <li class="text" *ngFor="let order of orders | async">
+        {{order.clientName}}
+      </li>
+    </ul>
 
   </div>
 
