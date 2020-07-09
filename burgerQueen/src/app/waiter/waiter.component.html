@@ -6,8 +6,8 @@
     </div>
   <div class="client-info">
     <ul>
-      <li class="text" *ngFor="let order of orders | async">
-        {{order.clientName}}
+      <li class="text" *ngFor="let order of ordersFields">
+        {{order.clientName}} - {{order.tableNumber}}
       </li>
     </ul>
 
