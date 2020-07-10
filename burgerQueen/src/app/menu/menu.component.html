@@ -1,1 +1,16 @@
-<p>menu works!</p>
+<div class="menu-nav-bar">
+  <button type="button" class="btn btn-dark mr-5" (click)="active='bebestibles'">BEBESTIBLES</button>
+  <button type="button" class="btn btn-dark mr-5" (click)="active='aperitivo'">APERITIVO</button>
+  <button type="button" class="btn btn-dark" (click)="active='almuerzo'">ALMUERZO</button>
+</div>
+<div>
+  <div class="beverages-container d-none" [ngClass]="{'d-block':active=='bebestibles'}">
+    <p>Hola soy un bebestible</p>
+  </div>
+  <div class="appetizers-container d-none" [ngClass]="{'d-block':active=='aperitivo'}">
+    <p>Yo soy un aperitivo</p>
+  </div>
+  <div class="lunch-container d-none" [ngClass]="{'d-block':active=='almuerzo'}">
+    <p>Soy un almuercito</p>
+  </div>
+</div>

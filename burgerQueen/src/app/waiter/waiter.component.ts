@@ -23,7 +23,7 @@ export class WaiterComponent implements OnInit {
   addOrder(){
     this.conection.addService(this.order);
     this.order.clientName = '';
-   this.order.tableNumber = 0;
+    this.order.tableNumber = 0;
   }
 
 }
