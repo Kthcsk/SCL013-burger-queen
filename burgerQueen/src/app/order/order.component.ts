@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConectionService } from '../services/conection.service';
 
 @Component({
   selector: 'app-order',
@@ -7,7 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OrderComponent implements OnInit {
 
-  constructor() { }
+  orders: any;
+
+  constructor(private conection: ConectionService) {
+    this.conection.waiterOrder().subscribe(item => {
+      this.orders = item;
+      console.log(this.orders)
+    })
+   }
 
   ngOnInit(): void {
   }
