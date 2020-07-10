@@ -1,6 +1,7 @@
 /*imports de angular*/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 /*imports firebase*/
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
@@ -29,9 +30,10 @@ import { ConectionService } from './services/conection.service';
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [ConectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

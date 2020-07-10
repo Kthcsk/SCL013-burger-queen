@@ -1,6 +1,13 @@
 <div class="container-order">
   <div class="banner-container">
-    <h1>PEDIDO</h1>
+    <h1>LISTA</h1>
+  </div>
+  <div>
+    <ul>
+      <li class="text" *ngFor="let order of orders">
+        {{order.clientName}} -  {{order.tableNumber}}
+      </li>
+    </ul>
   </div>
 
 </div>
