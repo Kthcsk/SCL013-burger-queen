@@ -2,21 +2,31 @@
 
   <div class="container-waiter">
     <div class="banner-container">
-      <h1>MESERO</h1>
+      <h1>LISTA-ADD</h1>
     </div>
   <div class="client-info">
-    <ul>
-      <li class="text" *ngFor="let order of ordersFields">
-        {{order.clientName}} - {{order.tableNumber}}
-      </li>
-    </ul>
-
+    <form (ngSubmit)= "addOrder()">
+      <input type="text" placeholder="Escribe el nombre"
+      name="clientName"
+      [(ngModel)]="order.clientName">
+      <input type="number" placeholder="Escribe el número"
+      name="tableNumber"
+      [(ngModel)]="order.tableNumber">
+      <button type="submit">Agregar</button>
+    </form>
   </div>
 
     <app-menu></app-menu>
   </div>
 
-
     <app-order></app-order>
 
 </div>
+
+
+
+
+
+      <!--<input type="number" placeholder="Escribe el número"
+      name="tableNumber"
+      [(ngModel)]="order.tableNumber">-->

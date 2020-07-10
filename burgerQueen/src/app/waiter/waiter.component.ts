@@ -8,16 +8,22 @@ import { ConectionService } from '../services/conection.service';
 })
 export class WaiterComponent implements OnInit {
 
-  ordersFields: any;  //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
+  order: any = { //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
+    clientName:'',
+    tableNumber:0
+  }
 
   constructor(private conection: ConectionService){
-    this.conection.waiterOrder().subscribe(o => {
-      this.ordersFields = o;
-      console.log(this.ordersFields);
-    })
+
   }
 
   ngOnInit(): void {
+  }
+
+  addOrder(){
+    this.conection.addService(this.order);
+    this.order.clientName = '';
+   this.order.tableNumber = 0;
   }
 
 }

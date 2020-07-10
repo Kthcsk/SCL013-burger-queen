@@ -4,7 +4,7 @@ import { Observable } from 'rxjs';
 
 export interface ClientOrder { //Aquí van los campos de la colección y su tipo de value
   clientName: string;
-  tableNumber: number;
+  //tableNumber: number;
 }
 
 @Injectable({
@@ -23,5 +23,9 @@ export class ConectionService {
 
   waiterOrder(){
     return this.ordersObserverData;
+  }
+
+  addService(item: ClientOrder) {
+    this.ordersCollectionFirestore.add(item);
   }
 }
