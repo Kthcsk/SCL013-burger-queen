@@ -1,0 +1,64 @@
+{
+  "lunch": [
+    {
+      "lunchImg": "burgerQueen/src/assets/Menu/Ramen.svg",
+      "lunchName": "Ramen shoyu",
+      "lunchPrice": 6000,
+      "lunchTopping": [
+        {
+          "noriName": "Alga nori",
+          "noriPrice": 1000
+        },
+        {
+          "wakameName": "Alga wakame",
+          "wakamePrice": 1000
+        }
+      ]
+    },
+    {
+      "lunchImg": "burgerQueen/src/assets/Menu/Ramen.svg",
+      "lunchName": "Ramen tonkotsu",
+      "lunchPrice": 6000,
+      "lunchTopping": [
+        {
+          "noriName": "Alga nori",
+          "noriPrice": 1000
+        },
+        {
+          "wakameName": "Alga wakame",
+          "wakamePrice": 1000
+        }
+      ]
+    },
+    {
+      "lunchImg": "burgerQueen/src/assets/Menu/Chirashi.svg",
+      "lunchName": "Chirashi",
+      "lunchPrice": 7000
+    },
+    {
+      "lunchImg": "burgerQueen/src/assets/Menu/Udon.svg",
+      "lunchName": "Yaki udon",
+      "lunchPrice": 7000,
+      "lunchTopping": [
+        {
+          "noriName": "Alga nori",
+          "noriPrice": 1000
+        },
+        {
+          "wakameName": "Alga wakame",
+          "wakamePrice": 1000
+        }
+      ]
+    },
+    {
+      "lunchImg": "burgerQueen/src/assets/Menu/Temaki.svg",
+      "lunchName": "Temaki sake",
+      "lunchPrice": 2500
+    },
+    {
+      "lunchImg": "burgerQueen/src/assets/Menu/Sukiyaki.svg",
+      "lunchName": "Sukiyaki",
+      "lunchPrice": 12000
+    }
+  ]
+}

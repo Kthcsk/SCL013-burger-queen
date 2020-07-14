@@ -4,33 +4,7 @@
   <button type="button" class="btn btn-dark" (click)="active='almuerzo'">ALMUERZO</button>
 </div>
 <div>
-
-  <div class="menu-drinks" *ngFor="let item of dataCall">
-    <div class="beverages-container d-none" [ngClass]="{'d-block':active=='bebestibles'}">
-      <p>Hola soy un bebestible</p>
-      <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-          <div class="card">
-            <img src="{{item.drinkImg}}" class="card-img-top" alt="Té matcha">
-            <div class="card-body">
-              <h5 class="card-title">{{item.drinkName}}</h5>
-              <p class="card-text">{{item.drinkPrice}}</p>
-            </div>
-          </div>
-        </div>
-  </div>
-
-<div class="menu-appetizer" *ngFor="let item of dataCall;index as i">
-  <img src="{{item.appetizerImg}}" alt="">
-  <h5>{{item.appetizerName}}</h5>
-  <p>{{item.appetizerPrice}}</p>
-</div>
-
-  </div>
-  <div class="appetizers-container d-none" [ngClass]="{'d-block':active=='aperitivo'}">
-    <p>Yo soy un aperitivo</p>
-  </div>
-  <div class="lunch-container d-none" [ngClass]="{'d-block':active=='almuerzo'}">
-    <p>Soy un almuercito</p>
-  </div>
+<app-menu-drinks></app-menu-drinks>
+<app-menu-appetizers></app-menu-appetizers>
+<app-menu-lunch></app-menu-lunch>
 </div>

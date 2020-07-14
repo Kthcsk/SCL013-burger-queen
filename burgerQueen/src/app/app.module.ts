@@ -7,16 +7,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 /*imports burgerQueen*/
-import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { WaiterComponent } from './waiter/waiter.component';
 import { OrderComponent } from './order/order.component';
 import { MenuComponent } from './menu/menu.component';
-import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { MenuDrinksComponent } from './menu-drinks/menu-drinks.component';
+import { MenuAppetizersComponent } from './menu-appetizers/menu-appetizers.component';
+import { MenuLunchComponent } from './menu-lunch/menu-lunch.component';
+/* Service */
 import { ConectionService } from './services/conection.service';
-import { MenuDataService } from './services/menu-data.service';
+import { AppRoutingModule } from './app-routing.module';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -26,7 +29,10 @@ import { MenuDataService } from './services/menu-data.service';
     WaiterComponent,
     OrderComponent,
     MenuComponent,
-    HomeComponent
+    HomeComponent,
+    MenuDrinksComponent,
+    MenuAppetizersComponent,
+    MenuLunchComponent
   ],
   imports: [
     BrowserModule,
@@ -37,8 +43,7 @@ import { MenuDataService } from './services/menu-data.service';
     HttpClientModule
   ],
   providers: [
-    ConectionService,
-    MenuDataService],
+    ConectionService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -4,14 +4,14 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root'
 })
-export class MenuDataService {
+export class MenuAppetizersService {
 
   constructor(private http: HttpClient) {
     console.log("service running");
   }
 
-  itadakimasuMenu(){
-    return this.http.get('../../assets/Data/menu-data.json')
+  appetizersMenu(){
+    return this.http.get('../../assets/Data/menu-data-appetizers.json')
   }
 
 }
