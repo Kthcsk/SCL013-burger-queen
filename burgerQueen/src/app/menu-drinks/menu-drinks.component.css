@@ -1,0 +1,45 @@
+.containerMenuDrinks{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 70%;
+}
+
+.menuDrinks{
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuCard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #FAFAFA ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 150px;
+}
+
+img{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cardTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #007A9B;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.containePrice{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FF7663;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}

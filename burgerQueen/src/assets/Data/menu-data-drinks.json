@@ -1,32 +1,32 @@
 {
   "drinks": [
   {
-    "drinkImg": "../../assets/Menu/Té.svg",
+    "drinkImg": "../../assets/Menu/Te.png",
     "drinkName": "Té matcha",
     "drinkPrice": 2500
   },
   {
-    "drinkImg": "burgerQueen/src/assets/Menu/Té.svg",
+    "drinkImg": "../../assets/Menu/Te.png",
     "drinkName": "Té verde",
     "drinkPrice": 1800
   },
   {
-    "drinkImg": "burgerQueen/src/assets/Menu/Té.svg",
+    "drinkImg": "../../assets/Menu/Te.png",
     "drinkName": "Té amarillo",
     "drinkPrice": 2500
   },
   {
-    "drinkImg": "burgerQueen/src/assets/Menu/Sake.svg",
+    "drinkImg": "../../assets/Menu/Sake.png",
     "drinkName": "Sake",
     "drinkPrice": 7000
   },
   {
-    "drinkImg": "burgerQueen/src/assets/Menu/Agua.svg",
+    "drinkImg": "../../assets/Menu/Agua.png",
     "drinkName": "Agua mineral",
     "drinkPrice": 1500
   },
   {
-    "drinkImg": "burgerQueen/src/assets/Menu/Jugo.svg",
+    "drinkImg": "../../assets/Menu/Jugo.png",
     "drinkName": "Jugo natural",
     "drinkPrice": 2000
   }

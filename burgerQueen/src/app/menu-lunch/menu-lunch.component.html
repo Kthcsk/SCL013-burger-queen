@@ -1,1 +1,15 @@
-<p>menu-lunch works!</p>
+<div class="lunch-container">
+  <div class="menu-lunch" *ngFor="let itemLunch of lunchDataCall">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4">
+          <div class="card">
+            <img src="{{itemLunch.lunchImg}}" class="card-img-top" alt="Bebestible">
+            <div class="card-body">
+              <h5 class="card-title">{{itemLunch.lunchName}}</h5>
+              <p class="card-text">{{itemLunch.lunchPrice}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>

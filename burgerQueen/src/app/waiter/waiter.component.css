@@ -1,6 +1,12 @@
+h6{
+  font-weight: 900;
+  font-size: 20px;
+}
+
 .container-waiter-order{
   display: flex;
   justify-content: space-around;
+  font-family: 'Roboto', sans-serif;
 }
 
 .container-waiter{
@@ -19,8 +25,58 @@
   font-weight: 900;
 }
 
-input, button{
+.clientContainer{
+  display: flex;
+  flex-flow: wrap row;
+  width: 100%;
+  background-color: yellowgreen;
+}
+
+.clientName{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: tomato;
+}
+
+.tableNumber{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: teal;
+}
+
+.menuNavBar{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btnMenu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 56px;
+  width: 237px;
+  background-color: #FFA093;;
+  color: #FAFAFA;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.btnMenu:focus{
+  background-color: #FF7663;
+  transition: 0.5s;
+}
+
+input{
   color:black;
+  border-radius: 10px;
+  outline: none;
 }
 
 
