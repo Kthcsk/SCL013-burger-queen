@@ -1,7 +1,7 @@
 {
   "lunch": [
     {
-      "lunchImg": "burgerQueen/src/assets/Menu/Ramen.svg",
+      "lunchImg": "../../assets/Menu/Ramen.png",
       "lunchName": "Ramen shoyu",
       "lunchPrice": 6000,
       "lunchTopping": [
@@ -16,7 +16,7 @@
       ]
     },
     {
-      "lunchImg": "burgerQueen/src/assets/Menu/Ramen.svg",
+      "lunchImg": "../../assets/Menu/Ramen.png",
       "lunchName": "Ramen tonkotsu",
       "lunchPrice": 6000,
       "lunchTopping": [
@@ -31,12 +31,12 @@
       ]
     },
     {
-      "lunchImg": "burgerQueen/src/assets/Menu/Chirashi.svg",
+      "lunchImg": "../../assets/Menu/Chirashi.png",
       "lunchName": "Chirashi",
       "lunchPrice": 7000
     },
     {
-      "lunchImg": "burgerQueen/src/assets/Menu/Udon.svg",
+      "lunchImg": "../../assets/Menu/Udon.png",
       "lunchName": "Yaki udon",
       "lunchPrice": 7000,
       "lunchTopping": [
@@ -51,12 +51,12 @@
       ]
     },
     {
-      "lunchImg": "burgerQueen/src/assets/Menu/Temaki.svg",
+      "lunchImg": "../../assets/Menu/Temaki.png",
       "lunchName": "Temaki sake",
       "lunchPrice": 2500
     },
     {
-      "lunchImg": "burgerQueen/src/assets/Menu/Sukiyaki.svg",
+      "lunchImg": "../../assets/Menu/Sukiyaki.png",
       "lunchName": "Sukiyaki",
       "lunchPrice": 12000
     }

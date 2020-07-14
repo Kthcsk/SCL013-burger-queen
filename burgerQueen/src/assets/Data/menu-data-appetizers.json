@@ -1,34 +1,34 @@
 {
   "appetizers": [
     {
-      "appetizerImg": "burgerQueen/src/assets/Menu/Gyosas.svg",
-      "appetizerName": "Gyosas cerdo",
-      "appetizerPrice": 3500
+      "appetizersImg": "../../assets/Menu/Gyozas.png",
+      "appetizersName": "Gyozas cerdo",
+      "appetizersPrice": 3500
     },
     {
-      "appetizerImg": "burgerQueen/src/assets/Menu/Gyosas.svg",
-      "appetizerName": "Gyosas verdura",
-      "appetizerPrice": 3200
+      "appetizersImg": "../../assets/Menu/Gyozas.png",
+      "appetizersName": "Gyozas verdura",
+      "appetizersPrice": 3200
     },
     {
-      "appetizerImg": "burgerQueen/src/assets/Menu/Gyosas.svg",
-      "appetizerName": "Gyosas camarón",
-      "appetizerPrice": 3500
+      "appetizersImg": "../../assets/Menu/Gyozas.png",
+      "appetizersName": "Gyozas camarón",
+      "appetizersPrice": 3500
     },
     {
-      "appetizerImg": "burgerQueen/src/assets/Menu/Camarones.svg",
-      "appetizerName": "Camarón apanado",
-      "appetizerPrice": 5000
+      "appetizersImg": "../../assets/Menu/Camarones.png",
+      "appetizersName": "Camarón apanado",
+      "appetizersPrice": 5000
     },
     {
-      "appetizerImg": "burgerQueen/src/assets/Menu/Tofu.svg",
-      "appetizerName": "Tofu apanado",
-      "appetizerPrice": 3500
+      "appetizersImg": "../../assets/Menu/Tofu.png",
+      "appetizersName": "Tofu apanado",
+      "appetizersPrice": 3500
     },
     {
-      "appetizerImg": "burgerQueen/src/assets/Menu/Sashimi.svg",
-      "appetizerName": "Surtido sashimi",
-      "appetizerPrice": 12000
+      "appetizersImg": "../../assets/Menu/Sashimi.png",
+      "appetizersName": "Surtido sashimi",
+      "appetizersPrice": 12000
     }
   ]
 }

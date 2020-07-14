@@ -13,7 +13,7 @@ export class MenuAppetizersComponent implements OnInit {
 
   constructor(private menuAppetizersService: MenuAppetizersService) {
     this.menuAppetizersService.appetizersMenu().subscribe(answer=>{
-      this.appetizersDataCall = answer["menu"]
+      this.appetizersDataCall = answer["appetizers"]
       console.log(answer);
     })
    }

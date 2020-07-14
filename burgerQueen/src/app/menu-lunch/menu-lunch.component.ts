@@ -12,7 +12,7 @@ export class MenuLunchComponent implements OnInit {
 
   constructor(private menuLunchService: MenuLunchService) {
     this.menuLunchService.lunchMenu().subscribe(answer=>{
-      this.lunchDataCall = answer["menu"]
+      this.lunchDataCall = answer["lunch"]
       console.log(answer);
     })
    }

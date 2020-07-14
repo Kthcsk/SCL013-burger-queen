@@ -12,11 +12,11 @@ export class MenuDrinksComponent implements OnInit {
 
   constructor(private menuDrinksService: MenuDrinksService) {
     this.menuDrinksService.drinksMenu().subscribe(answer=>{
-      this.drinksDataCall = answer["menu"]
+      this.drinksDataCall = answer["drinks"]
       console.log(answer);
     })
    }
-   
+
   ngOnInit(): void {
   }
 

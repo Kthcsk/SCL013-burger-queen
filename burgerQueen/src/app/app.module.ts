@@ -11,7 +11,6 @@ import { AppComponent } from './app.component';
 import { BannerComponent } from './banner/banner.component';
 import { WaiterComponent } from './waiter/waiter.component';
 import { OrderComponent } from './order/order.component';
-import { MenuComponent } from './menu/menu.component';
 import { HomeComponent } from './home/home.component';
 import { MenuDrinksComponent } from './menu-drinks/menu-drinks.component';
 import { MenuAppetizersComponent } from './menu-appetizers/menu-appetizers.component';
@@ -28,7 +27,6 @@ import { environment } from '../environments/environment';
     BannerComponent,
     WaiterComponent,
     OrderComponent,
-    MenuComponent,
     HomeComponent,
     MenuDrinksComponent,
     MenuAppetizersComponent,
