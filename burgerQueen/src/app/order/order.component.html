@@ -1,6 +1,12 @@
+
 <div class="container-order">
   <div class="banner-container">
     <h1>PEDIDO</h1>
+  </div>
+  <div>Productos
+    <div *ngFor="let product of drinksDataCall; index as i">
+      {{product.i}}
+    </div>
   </div>
   <div>
     <ul>

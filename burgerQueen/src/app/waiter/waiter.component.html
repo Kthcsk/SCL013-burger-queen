@@ -18,15 +18,20 @@
           name="tableNumber"
           [(ngModel)]="order.tableNumber">
         </div>
+        <div class="containerBtnAdd">
+          <div class="correctBtn">
+            <button type="submit" class="submitBtn">&nbsp;&nbsp;&nbsp;&nbsp;
+              <img src="../../assets/correct.svg">
+            </button>
+          </div>
+        </div>
       </form>
+
     </div>
-      <div class="containerBtnAdd">
-        <button type="submit" class="btn btn-light">Agregar</button>
-      </div>
     <div class="menuNavBar">
-      <a type="button" class="btnMenu" routerLink='drinks' routerLinkActive="router-link-active">BEBESTIBLES</a>
-      <a type="button" class="btnMenu" routerLink='appetizers' routerLinkActive="router-link-active">APERITIVO</a>
-      <a type="button" class="btnMenu" routerLink='lunch' routerLinkActive="router-link-active">ALMUERZO</a>
+      <a class="btnMenu" routerLink='drinks' routerLinkActive="router-link-active">BEBESTIBLES</a>
+      <a  class="btnMenu" routerLink='appetizers' routerLinkActive="router-link-active">APERITIVO</a>
+      <a  class="btnMenu" routerLink='lunch' routerLinkActive="router-link-active">ALMUERZO</a>
     </div>
     <div>
       <router-outlet></router-outlet>

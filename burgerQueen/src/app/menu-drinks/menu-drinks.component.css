@@ -3,17 +3,14 @@
   justify-content: center;
   flex-wrap: wrap;
   width: 100%;
-}
-
-.menuDrinks{
-  display: flex;
-  align-items: center;
+  padding: 2% 5% 0 5%;
 }
 
 .menuCard{
   display: flex;
   flex-direction: column;
   width: 150px;
+  margin: 0.6em 1.5em 0.6em 1.5em;
 }
 
 .imgTitleCard{
@@ -30,9 +27,7 @@ img{
 }
 
 .cardTitle{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #007A9B;
   font-family: inherit;
   font-weight: 700;
@@ -41,9 +36,14 @@ img{
 .containePrice{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+  align-items:center;
+  text-align: center;
   background-color: #FF7663;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   font-weight: 700;
+  height: 40px;
 }
+
+
