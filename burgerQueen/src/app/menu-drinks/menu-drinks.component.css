@@ -1,0 +1,53 @@
+.containerMenuDrinks{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2% 5% 0 5%;
+}
+
+.menuCard{
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  margin: 0.6em 1.5em 0.6em 1.5em;
+}
+
+.imgTitleCard{
+  background-color: #FAFAFA ;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 100%;
+  height: 130px;
+}
+
+
+
+img{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.cardTitle{
+  text-align: center;
+  color: #007A9B;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.containePrice{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items:center;
+  text-align: center;
+  background-color: #FF7663;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 700;
+  height: 40px;
+}
+
+
