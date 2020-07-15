@@ -13,3 +13,4 @@ export class AppComponent {
     this.items = firestore.collection('orders').valueChanges();
   }
 }
+

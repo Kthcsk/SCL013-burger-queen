@@ -1,0 +1,34 @@
+{
+  "drinks": [
+  {
+    "drinkImg": "../../assets/Menu/Te.png",
+    "drinkName": "Té matcha",
+    "drinkPrice": 2500
+  },
+  {
+    "drinkImg": "../../assets/Menu/Te.png",
+    "drinkName": "Té verde",
+    "drinkPrice": 1800
+  },
+  {
+    "drinkImg": "../../assets/Menu/Te.png",
+    "drinkName": "Té amarillo",
+    "drinkPrice": 2500
+  },
+  {
+    "drinkImg": "../../assets/Menu/Sake.png",
+    "drinkName": "Sake",
+    "drinkPrice": 7000
+  },
+  {
+    "drinkImg": "../../assets/Menu/Agua.png",
+    "drinkName": "Agua mineral",
+    "drinkPrice": 1500
+  },
+  {
+    "drinkImg": "../../assets/Menu/Jugo.png",
+    "drinkName": "Jugo natural",
+    "drinkPrice": 2000
+  }
+]
+}
