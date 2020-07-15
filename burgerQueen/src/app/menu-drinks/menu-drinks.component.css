@@ -2,22 +2,25 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
 }
 
 .menuDrinks{
   display: flex;
-  justify-content: space-around;
+  align-items: center;
 }
 
 .menuCard{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  width: 150px;
+}
+
+.imgTitleCard{
   background-color: #FAFAFA ;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  width: 150px;
+  width: 100%;
 }
 
 img{
@@ -42,4 +45,5 @@ img{
   background-color: #FF7663;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  font-weight: 700;
 }

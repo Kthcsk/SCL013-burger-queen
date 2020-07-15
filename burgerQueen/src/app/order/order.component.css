@@ -1,7 +1,12 @@
+h1{
+  font-weight: 900;
+  font-size: 1.9rem;
+}
+
 .container-order{
   background: rgba(0, 123, 155, 0.97);
-  width: 467px;
-  height: 658px;
+  width: 29em;
+  height: 41em;
 }
 
 
@@ -13,4 +18,25 @@
   align-items: center;
   justify-content: center;
   font-weight: 900;
+}
+
+.totalOrder{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 10px 0 10px 0;
+  background-color: #FFA093;
+  height: 56px;
+}
+
+.btn-info.custom-btn{
+  color: #FAFAFA;
+  border-color: #FAFAFA;
+  border-style: solid 5px;
+  background-color: #006B87;
+  height: 87px;
+  width: 278px;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top: 10px;
 }

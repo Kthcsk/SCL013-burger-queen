@@ -1,3 +1,8 @@
+h1{
+  font-weight: 900;
+  font-size: 30px;
+}
+
 h6{
   font-weight: 900;
   font-size: 20px;
@@ -27,23 +32,22 @@ h6{
 
 .clientContainer{
   display: flex;
-  flex-flow: wrap row;
+  justify-content: space-around;
   width: 100%;
-  background-color: yellowgreen;
+  margin: 15px 0;
 }
 
 .clientName{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  background-color: tomato;
+  text-align: center;
+  font-size: 20px;
 }
 
 .tableNumber{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  background-color: teal;
+  text-align: center;
 }
 
 .menuNavBar{
@@ -74,9 +78,35 @@ h6{
 }
 
 input{
+  background-color: #F8F8F8;
+  opacity: 90%;
   color:black;
   border-radius: 10px;
   outline: none;
+  width: 280px;
+  height: 48px;
+  text-align: center;
+}
+
+::placeholder{
+  color: #006B87;
+  font-size: 18px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Quita las flechas del input */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+-webkit-appearance: none;
+margin: 0;
+}
+
+/* Momentaneo (borrar) */
+.containerBtnAdd{
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 40px 10px 0;
 }
 
 
