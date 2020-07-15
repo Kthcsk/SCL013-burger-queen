@@ -1,15 +1,13 @@
-<div class="appetizers-container">
-  <div class="menu-appetizers" *ngFor="let itemAppetizers of appetizersDataCall">
-      <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4">
-          <div class="card">
-            <img src="{{itemAppetizers.appetizersImg}}" class="card-img-top" alt="Aperitivo">
-            <div class="card-body">
-              <h5 class="card-title">{{itemAppetizers.appetizersName}}</h5>
-              <p class="card-text">{{itemAppetizers.appetizersPrice}}</p>
-            </div>
-          </div>
-        </div>
+<div class="containerMenuAppetizers">
+  <div class="menuAppetizers" *ngFor="let itemAppetizer of appetizersDataCall; index as i">
+    <div class="menuCard">
+      <div class="imgTitleCard">
+        <img src="{{itemAppetizer.appetizersImg}}" alt="Appetizers">
+        <h5 class="cardTitle">{{itemAppetizer.appetizersName}}</h5>
       </div>
+      <div class="containePrice">
+        $ {{itemAppetizer.appetizersPrice}}
+      </div>
+    </div>
   </div>
 </div>

@@ -20,4 +20,8 @@ export class MenuDrinksComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  enviar(i){
+    console.log(i)
+  }
+
 }
