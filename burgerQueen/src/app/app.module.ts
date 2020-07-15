@@ -19,6 +19,7 @@ import { MenuLunchComponent } from './menu-lunch/menu-lunch.component';
 import { ConectionService } from './services/conection.service';
 import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
+import { KitchenComponent } from './kitchen/kitchen.component';
 
 
 @NgModule({
@@ -30,7 +31,8 @@ import { environment } from '../environments/environment';
     HomeComponent,
     MenuDrinksComponent,
     MenuAppetizersComponent,
-    MenuLunchComponent
+    MenuLunchComponent,
+    KitchenComponent
   ],
   imports: [
     BrowserModule,

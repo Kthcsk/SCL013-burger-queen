@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { MenuDrinksComponent } from './menu-drinks/menu-drinks.component';
 import { MenuAppetizersComponent } from './menu-appetizers/menu-appetizers.component';
 import { MenuLunchComponent } from './menu-lunch/menu-lunch.component';
+import { KitchenComponent } from './kitchen/kitchen.component';
 
 const route:Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -15,7 +16,8 @@ const route:Routes = [
       { path: 'drinks', component: MenuDrinksComponent},
       { path: 'appetizers', component: MenuAppetizersComponent},
       { path: 'lunch', component: MenuLunchComponent}
-    ]}
+    ]},
+  { path: 'kitchen', component: KitchenComponent},
 ]
 @NgModule({
   declarations: [],
