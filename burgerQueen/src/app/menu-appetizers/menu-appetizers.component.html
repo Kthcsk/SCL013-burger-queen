@@ -1,0 +1,13 @@
+<div class="containerMenuAppetizers">
+  <div class="menuAppetizers" *ngFor="let itemAppetizer of appetizersDataCall; index as i">
+    <div class="menuCard">
+      <div class="imgTitleCard">
+        <img src="{{itemAppetizer.appetizersImg}}" alt="Appetizers">
+        <h5 class="cardTitle">{{itemAppetizer.appetizersName}}</h5>
+      </div>
+      <div class="containePrice">
+        $ {{itemAppetizer.appetizersPrice}}
+      </div>
+    </div>
+  </div>
+</div>

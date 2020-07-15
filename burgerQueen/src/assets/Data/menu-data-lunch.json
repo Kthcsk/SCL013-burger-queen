@@ -1,0 +1,64 @@
+{
+  "lunch": [
+    {
+      "lunchImg": "../../assets/Menu/Ramen.png",
+      "lunchName": "Ramen shoyu",
+      "lunchPrice": 6000,
+      "lunchTopping": [
+        {
+          "noriName": "Alga nori",
+          "noriPrice": 1000
+        },
+        {
+          "wakameName": "Alga wakame",
+          "wakamePrice": 1000
+        }
+      ]
+    },
+    {
+      "lunchImg": "../../assets/Menu/Ramen.png",
+      "lunchName": "Ramen tonkotsu",
+      "lunchPrice": 6000,
+      "lunchTopping": [
+        {
+          "noriName": "Alga nori",
+          "noriPrice": 1000
+        },
+        {
+          "wakameName": "Alga wakame",
+          "wakamePrice": 1000
+        }
+      ]
+    },
+    {
+      "lunchImg": "../../assets/Menu/Chirashi.png",
+      "lunchName": "Chirashi",
+      "lunchPrice": 7000
+    },
+    {
+      "lunchImg": "../../assets/Menu/Udon.png",
+      "lunchName": "Yaki udon",
+      "lunchPrice": 7000,
+      "lunchTopping": [
+        {
+          "noriName": "Alga nori",
+          "noriPrice": 1000
+        },
+        {
+          "wakameName": "Alga wakame",
+          "wakamePrice": 1000
+        }
+      ]
+    },
+    {
+      "lunchImg": "../../assets/Menu/Temaki.png",
+      "lunchName": "Temaki sake",
+      "lunchPrice": 2500
+    },
+    {
+      "lunchImg": "../../assets/Menu/Sukiyaki.png",
+      "lunchName": "Sukiyaki",
+      "lunchPrice": 12000
+    }
+  ]
+}
