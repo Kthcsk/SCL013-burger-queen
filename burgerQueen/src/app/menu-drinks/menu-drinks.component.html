@@ -1,13 +1,13 @@
 <div class="containerMenuDrinks">
     <div class="menuDrinks" *ngFor="let itemDrink of drinksDataCall">
       <div class="menuCard">
-        <div>
+        <div class="imgTitleCard">
           <img src="{{itemDrink.drinkImg}}" alt="Bebestible">
           <h5 class="cardTitle">{{itemDrink.drinkName}}</h5>
         </div>
-          <div class="containePrice">
-            <p>{{itemDrink.drinkPrice}}</p>
-          </div>
+        <div class="containePrice">
+          <p>{{itemDrink.drinkPrice}}</p>
+        </div>
       </div>
     </div>
 </div>

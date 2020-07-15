@@ -4,23 +4,25 @@
     <div class="banner-container">
       <h1>MESERO</h1>
     </div>
-    <div class="clientContainer">
-      <form (ngSubmit)= "addOrder()">
+    <div>
+      <form class="clientContainer" (ngSubmit)= "addOrder()">
         <div class="clientName">
           <h6>NOMBRE CLIENTE</h6>
-          <input type="text" placeholder="Escribe el nombre"
+          <input type="text" autocomplete="off" placeholder="Escribe el nombre"
           name="clientName"
           [(ngModel)]="order.clientName">
         </div>
         <div class="tableNumber">
           <h6>N° MESA</h6>
-          <input type="number" placeholder="Escribe el número"
+          <input type="number" autocomplete="off" placeholder="Escribe el número"
           name="tableNumber"
           [(ngModel)]="order.tableNumber">
         </div>
       </form>
     </div>
-    <button type="submit">Agregar</button>
+      <div class="containerBtnAdd">
+        <button type="submit" class="btn btn-light">Agregar</button>
+      </div>
     <div class="menuNavBar">
       <a type="button" class="btnMenu" routerLink='drinks' routerLinkActive="router-link-active">BEBESTIBLES</a>
       <a type="button" class="btnMenu" routerLink='appetizers' routerLinkActive="router-link-active">APERITIVO</a>
