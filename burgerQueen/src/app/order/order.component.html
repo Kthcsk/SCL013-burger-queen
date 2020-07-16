@@ -1,26 +1,36 @@
 
 <div class="container-order">
+
   <div class="banner-container">
     <h1>PEDIDO</h1>
   </div>
-  <div>Productos
-    <!--<div *ngFor="let product of drinksDataCall; index as i">
-      {{product.i}}
+
+
+  <div class="printProductContainer">
+    <div class="printProduct">
+      <ul>
+        <li class="text" *ngFor="let ord of ordersArray">
+          {{ord.clientName}} -  {{ord.tableNumber}}
+        </li>
+      </ul>
     </div>
-  </div>-->
-  <div>
-    <ul>
-      <li class="text" *ngFor="let order of orders">
-        {{order.clientName}} -  {{order.tableNumber}}
-      </li>
-    </ul>
   </div>
-  <div class="totalOrder">
-    <h1>TOTAL</h1>
-    <h1>$</h1>
-  </div>
-  <div class="d-flex justify-content-center">
-    <button type="button" class="btn btn-info custom-btn">ENVIAR</button>
+
+  <div class="totalCheck">
+    <div class="totalOrder">
+      <h1>TOTAL</h1>
+      <h1>$</h1>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-info custom-btn">ENVIAR</button>
+    </div>
   </div>
 
 </div>
+
+<!--<div>
+  <div *ngFor="let product of ordersArray; index as i">
+    {{product.i}}
+  </div>
+</div>-->
