@@ -10,7 +10,7 @@ export class WaiterComponent implements OnInit {
 
   order: any = { //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
     clientName:'',
-    tableNumber:0
+    tableNumber:''
   }
 
   constructor(private conection: ConectionService){
@@ -21,9 +21,12 @@ export class WaiterComponent implements OnInit {
   }
 
   addOrder(){
-    this.conection.addService(this.order);
-    this.order.clientName = '';
-    this.order.tableNumber = 0;
+   // this.conection.addService(this.order);
+   this.conection.agregarOrden(this.order);
+   console.log(this.order);
+
+    //this.order.clientName = '';
+    //this.order.tableNumber = '';
   }
 
 }

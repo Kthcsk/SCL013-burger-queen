@@ -10,6 +10,8 @@ export class OrderComponent implements OnInit {
 
   orders: any;
 
+  ordersArray= [];
+
   constructor(private conection: ConectionService) {
     this.conection.waiterOrder().subscribe(item => {
       this.orders = item;
@@ -18,6 +20,11 @@ export class OrderComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    this.listarOrders();
+  }
+
+  listarOrders(){
+    this.ordersArray= this.conection.mostrarOrden();
   }
 
 

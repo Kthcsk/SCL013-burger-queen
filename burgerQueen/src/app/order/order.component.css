@@ -6,18 +6,31 @@ h1{
 .container-order{
   background: rgba(0, 123, 155, 0.97);
   width: 29em;
-  height: 39em;
+  height: 42em;
+  display: flex;
+  flex-direction: column;
 }
-
 
 .banner-container{
   background: #006B87;
   width: auto;
-  height: 60px;
+  height: 3.7em;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 900;
+}
+
+.printProductContainer{
+  height: 24em;
+}
+
+.printProduct{
+  height: 24em;
+}
+
+.totalCheck{
+  height: 14.3em;
 }
 
 .totalOrder{
