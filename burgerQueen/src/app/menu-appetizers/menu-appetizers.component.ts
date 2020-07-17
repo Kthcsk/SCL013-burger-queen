@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuAppetizersService } from '../services/menu-appetizers.service';
+import { SummaryService } from '../services/summary.service';
 
 
 @Component({
@@ -11,7 +12,10 @@ export class MenuAppetizersComponent implements OnInit {
 
   appetizersDataCall:any[] = [];
 
-  constructor(private menuAppetizersService: MenuAppetizersService) {
+  constructor(
+    private menuAppetizersService: MenuAppetizersService,
+    public summaryConection: SummaryService )
+    {
     this.menuAppetizersService.appetizersMenu().subscribe(answer=>{
       this.appetizersDataCall = answer["appetizers"]
       console.log(answer);
@@ -20,5 +24,10 @@ export class MenuAppetizersComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  sendProduct(object){
+    this.summaryConection.pushToOrder(object)
+  }
+
 
 }

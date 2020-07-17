@@ -9,12 +9,19 @@
   <div class="printProductContainer">
     <div class="printProduct">
       <ul>
-        <li class="text" *ngFor="let ord of ordersArray">
-          {{ord.clientName}} -  {{ord.tableNumber}}
-        </li>
+        <p class="text" *ngFor="let item of selectedOrdersArray">
+         {{item.clientName}} {{item.tableNumber}}
       </ul>
+    <div class="printSelectedProduct" *ngFor="let product of selectedOrdersArray">
+      <tr>
+        <th>{{product.name}}</th> &nbsp;
+        <th>{{product.price}}</th>
+        <!--<th>{{product.drinkName}}</th> &nbsp;
+        <th>{{product.drinkPrice}}</th>-->
+      </tr>
     </div>
   </div>
+</div>
 
   <div class="totalCheck">
     <div class="totalOrder">

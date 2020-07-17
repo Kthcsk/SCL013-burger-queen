@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ConectionService } from '../services/conection.service';
+import { SummaryService } from '../services/summary.service';
 
 @Component({
   selector: 'app-waiter',
@@ -8,22 +9,22 @@ import { ConectionService } from '../services/conection.service';
 })
 export class WaiterComponent implements OnInit {
 
-  order: any = { //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
+  clientInfo: any = { //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
     clientName:'',
     tableNumber:''
   }
 
-  constructor(private conection: ConectionService){
+  constructor(public summaryConection: SummaryService){
 
   }
 
   ngOnInit(): void {
   }
 
-  addOrder(){
+  addClientInfo(){
    // this.conection.addService(this.order);
-   this.conection.agregarOrden(this.order);
-   console.log(this.order);
+   this.summaryConection.pushToOrder(this.clientInfo);
+   console.log(this.clientInfo);
 
     //this.order.clientName = '';
     //this.order.tableNumber = '';
