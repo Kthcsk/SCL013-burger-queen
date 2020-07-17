@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 export interface ClientOrder { //Aquí van los campos de la colección y su tipo de value
   clientName: string;
-  //tableNumber: number;
+  tableNumber: number;
+  selectedItem: Array<object>;
 }
 
 @Injectable({
@@ -12,12 +14,20 @@ export interface ClientOrder { //Aquí van los campos de la colección y su tipo
 })
 export class ConectionService {
 
+  private docClientOrder: AngularFirestoreDocument<ClientOrder>;
+
   private ordersCollectionFirestore: AngularFirestoreCollection<ClientOrder>; //Aquí en la var privada va la colección que referencia a la interfase
   ordersObserverData: Observable<ClientOrder[]>; //Aquí orders guarda el observable, la interfase guardaría las propiedades de la interfase
                                //en un array
   constructor(private afs: AngularFirestore) { // afs angular-firestore
     this.ordersCollectionFirestore = afs.collection<ClientOrder>('orders');
-    this.ordersObserverData = this.ordersCollectionFirestore.valueChanges();
+    this.ordersObserverData = this.ordersCollectionFirestore.snapshotChanges().pipe(
+      map(actions => actions.map(a => {
+        const data = a.payload.doc.data() as ClientOrder;
+        const id = a.payload.doc.id;
+        return { id, ...data };
+      }))
+    );
 
   }
 
