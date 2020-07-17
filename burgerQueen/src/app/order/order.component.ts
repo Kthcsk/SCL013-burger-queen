@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SummaryService } from '../services/summary.service';
 import { ConectionService } from '../services/conection.service';
 
 @Component({
@@ -10,9 +11,12 @@ export class OrderComponent implements OnInit {
 
   orders: any;
 
-  ordersArray= [];
+  selectedOrdersArray= [];
 
-  constructor(private conection: ConectionService) {
+  constructor(
+    public summaryConection: SummaryService,
+    private conection: ConectionService )
+   {
     this.conection.waiterOrder().subscribe(item => {
       this.orders = item;
       console.log(this.orders)
@@ -20,11 +24,11 @@ export class OrderComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.listarOrders();
+    this.listOrders();
   }
 
-  listarOrders(){
-    this.ordersArray= this.conection.mostrarOrden();
+  listOrders(){
+    this.selectedOrdersArray= this.summaryConection.showOrder();
   }
 
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuDrinksService } from '../services/menu-drinks.service';
+import { SummaryService } from '../services/summary.service';
 
 @Component({
   selector: 'app-menu-drinks',
@@ -10,7 +11,10 @@ export class MenuDrinksComponent implements OnInit {
 
   drinksDataCall:any[] = [];
 
-  constructor(private menuDrinksService: MenuDrinksService) {
+  constructor(
+    private menuDrinksService: MenuDrinksService,
+    public summaryConection: SummaryService)
+    {
     this.menuDrinksService.drinksMenu().subscribe(answer=>{
       this.drinksDataCall = answer["drinks"]
       console.log(answer);
@@ -20,8 +24,8 @@ export class MenuDrinksComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  enviar(i){
-    console.log(i)
+  sendProduct(object){
+    this.summaryConection.pushToOrder(object)
   }
 
 }
