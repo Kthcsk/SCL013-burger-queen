@@ -5,18 +5,18 @@
       <h1>MESERO</h1>
     </div>
     <div>
-      <form class="clientContainer" (ngSubmit)= "addOrder()">
+      <form class="clientContainer" (ngSubmit)= "addClientInfo()">
         <div class="clientName">
           <h6>NOMBRE CLIENTE</h6>
           <input type="text" autocomplete="off" placeholder="Escribe el nombre"
           name="clientName"
-          [(ngModel)]="order.clientName">
+          [(ngModel)]="clientInfo.clientName">
         </div>
         <div class="tableNumber">
           <h6>N° MESA</h6>
           <input type="number" autocomplete="off" placeholder="Escribe el número"
           name="tableNumber"
-          [(ngModel)]="order.tableNumber">
+          [(ngModel)]="clientInfo.tableNumber">
         </div>
         <div class="containerBtnAdd">
           <div class="correctBtn">

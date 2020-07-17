@@ -1,12 +1,12 @@
 <div class="containerMenuDrinks">
     <div class="menuDrinks" *ngFor="let itemDrink of drinksDataCall; index as i">
-      <div class="menuCard" (click)="enviar(i)">
+      <div class="menuCard" (click)="sendProduct(itemDrink)">
         <div class="imgTitleCard">
-          <img src="{{itemDrink.drinkImg}}" alt="Bebestible">
-          <h5 class="cardTitle">{{itemDrink.drinkName}}</h5>
+          <img src="{{itemDrink.img}}" alt="Bebestible">
+          <h5 class="cardTitle">{{itemDrink.name}}</h5>
         </div>
         <div class="containePrice">
-          $ {{itemDrink.drinkPrice}}
+          $ {{itemDrink.price}}
         </div>
       </div>
     </div>

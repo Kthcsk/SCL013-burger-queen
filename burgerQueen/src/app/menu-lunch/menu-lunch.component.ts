@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuLunchService } from '../services/menu-lunch.service';
+import { SummaryService } from '../services/summary.service';
 
 @Component({
   selector: 'app-menu-lunch',
@@ -10,7 +11,10 @@ export class MenuLunchComponent implements OnInit {
 
   lunchDataCall:any[] = [];
 
-  constructor(private menuLunchService: MenuLunchService) {
+  constructor(
+    private menuLunchService: MenuLunchService,
+    public summaryConection: SummaryService)
+    {
     this.menuLunchService.lunchMenu().subscribe(answer=>{
       this.lunchDataCall = answer["lunch"]
       console.log(answer);
@@ -18,6 +22,10 @@ export class MenuLunchComponent implements OnInit {
    }
 
   ngOnInit(): void {
+  }
+
+  sendProduct(object){
+    this.summaryConection.pushToOrder(object)
   }
 
 }

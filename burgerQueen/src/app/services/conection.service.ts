@@ -12,8 +12,6 @@ export interface ClientOrder { //Aquí van los campos de la colección y su tipo
 })
 export class ConectionService {
 
-  ordenArray:any = [];
-
   private ordersCollectionFirestore: AngularFirestoreCollection<ClientOrder>; //Aquí en la var privada va la colección que referencia a la interfase
   ordersObserverData: Observable<ClientOrder[]>; //Aquí orders guarda el observable, la interfase guardaría las propiedades de la interfase
                                //en un array
@@ -23,23 +21,12 @@ export class ConectionService {
 
   }
 
-  waiterOrder(){
+  waiterOrder(){ //Ocupar esta función para cuando retomemos firebase
     return this.ordersObserverData;
   }
 
   addService(item: ClientOrder) {
     this.ordersCollectionFirestore.add(item);
-  }
-
-  agregarOrden(object : any){
-    console.log(object);
-    this.ordenArray.push(object);
-    this.mostrarOrden();
-  }
-
-  mostrarOrden(){
-    console.log(this.ordenArray)
-    return this.ordenArray;
   }
 
 }
