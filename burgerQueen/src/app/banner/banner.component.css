@@ -10,3 +10,12 @@ img {
   margin-left: 26px;
 }
 
+.homeBtn{
+  text-decoration: none;
+  color:#fafafa;
+  font-size: 1.5em;
+  float: right;
+  padding:50px 40px;
+  font-weight: 700;
+}
+

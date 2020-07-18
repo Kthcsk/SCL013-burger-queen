@@ -1,0 +1,17 @@
+.container-kitchen{
+  background: rgba(0, 123, 155, 0.97);
+  width: 67em;
+  height: 38.7em;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-container{
+  background: #006B87;
+  width: 67em;
+  height: 3.7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+}
