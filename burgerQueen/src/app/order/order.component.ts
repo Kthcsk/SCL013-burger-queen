@@ -20,15 +20,38 @@ export class OrderComponent implements OnInit {
   selectedOrdersArray = [];
   observerDoc: Observable <any[]>;
 
+
+  get total(): number {
+    return this.orders.selectedItem.reduce(
+      (accumulator, currentValue) => accumulator + currentValue.price //acumulador, valoractual
+      , 0 //valor inicial del acumulador
+    );
+  }
+
+  increase(product){
+    product.increase();
+  }
+
+  decrease(product){
+    product.decrease();
+
+    if (product.quantity <= 0) {
+      const index = this.selectedOrdersArray.indexOf(product, 0);
+      if (index > -1) {
+        this.selectedOrdersArray.splice(index, 1);
+      }
+    }
+  }
+
   constructor(
     public summaryConection: SummaryService,
     public db: AngularFirestore,
     private conection: ConectionService )
    {
-    this.conection.waiterOrder().subscribe(item => {
+   /*  this.conection.waiterOrder().subscribe(item => {
       this.orders = item;
       console.log(this.orders)
-    })
+    }) */
     this.observerDoc = db.collection('orders').valueChanges();
    }
 
@@ -41,8 +64,14 @@ export class OrderComponent implements OnInit {
   }
 
   sendToData(){
-    this.conection.addService(this.orders);
-    console.log(this.orders)
+    const orders: any = {
+      clientName: this.summaryConection.clientInfo["clientName"],
+      tableNumber: this.summaryConection.clientInfo["tableNumber"],
+      selectedItem: this.summaryConection.summaryArray.map(item => Object.assign({}, item))
+    }
+
+    this.conection.addService(orders);
+    console.log(orders)
   }
 
 }
