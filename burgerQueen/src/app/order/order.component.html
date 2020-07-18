@@ -5,35 +5,39 @@
     <h1>PEDIDO</h1>
   </div>
 
-
-  <div class="printProductContainer">
-    <div class="printProduct">
-      <ul>
-        <p class="text" *ngFor="let item of selectedOrdersArray">
-         {{item.clientName}} {{item.tableNumber}}
-      </ul>
-    <div class="printSelectedProduct" *ngFor="let product of selectedOrdersArray">
-      <tr>
-        <th>{{product.name}}</th> &nbsp;
-        <th>{{product.price}}</th>
-        <!--<th>{{product.drinkName}}</th> &nbsp;
-        <th>{{product.drinkPrice}}</th>-->
-      </tr>
-    </div>
-  </div>
-</div>
-
-  <div class="totalCheck">
-    <div class="totalOrder">
-      <h1>TOTAL</h1>
-      <h1>$</h1>
-    </div>
-
-    <div class="d-flex justify-content-center">
-      <button type="button" class="btn btn-info custom-btn" (click)="sendToData()">ENVIAR</button>
+  <form (ngSubmit)="sendToData()">
+    <div class="printProductContainer">
+      <div class="printProduct">
+        <ul>
+          <p class="text">
+          <!-- {{orders.clientName}} {{orders.tableNumber}} -->
+        </ul>
+      <div class="printSelectedProduct" *ngFor="let product of selectedOrdersArray">
+        <tr>
+          <th><button type="button" (click)="increase(product)">+</button>
+            {{product.quantity}}
+            <button type="button" (click)="decrease(product)">-</button>
+          </th>&nbsp;
+          <th>{{product.name}}</th> &nbsp;
+          <th>{{product.price}}</th>
+          <!--<th>{{product.drinkName}}</th> &nbsp;
+          <th>{{product.drinkPrice}}</th>-->
+        </tr>
+      </div>
     </div>
   </div>
 
+    <div class="totalCheck">
+      <div class="totalOrder">
+        <h1>TOTAL</h1>
+        <h1>${{total}}</h1>
+      </div>
+
+      <div class="d-flex justify-content-center">
+        <button type="submit" class="btn btn-info custom-btn">ENVIAR</button>
+      </div>
+    </div>
+  </form>
 </div>
 
 <!--<div>
