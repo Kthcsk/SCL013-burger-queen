@@ -11,18 +11,19 @@ import { AngularFirestore } from '@angular/fire/firestore';
 })
 export class OrderComponent implements OnInit {
 
-  orders: any = {
-    clientName:'',
-    tableNumber:'',
-    selectedItem:[] = this.summaryConection.summaryArray
-  }
-
   selectedOrdersArray = [];
   observerDoc: Observable <any[]>;
 
+  get clientName(): string {
+    return this.summaryConection.clientInfo.clientName;
+  }
+
+  get tableNumber(): number {
+    return this.summaryConection.clientInfo.tableNumber;
+  }
 
   get total(): number {
-    return this.orders.selectedItem.reduce(
+    return this.selectedOrdersArray.reduce(
       (accumulator, currentValue) => accumulator + currentValue.price //acumulador, valoractual
       , 0 //valor inicial del acumulador
     );
@@ -65,13 +66,17 @@ export class OrderComponent implements OnInit {
 
   sendToData(){
     const orders: any = {
-      clientName: this.summaryConection.clientInfo["clientName"],
-      tableNumber: this.summaryConection.clientInfo["tableNumber"],
+      clientName: this.summaryConection.clientInfo.clientName,
+      tableNumber: this.summaryConection.clientInfo.tableNumber,
       selectedItem: this.summaryConection.summaryArray.map(item => Object.assign({}, item))
     }
 
     this.conection.addService(orders);
-    console.log(orders)
+    this.summaryConection.clientInfo.clientName='';
+    this.summaryConection.clientInfo.tableNumber='';
+    this.selectedOrdersArray.splice(0, this.selectedOrdersArray.length);
+
   }
+
 
 }

@@ -6,7 +6,7 @@ h1{
 .container-order{
   background: rgba(0, 123, 155, 0.97);
   width: 29em;
-  height: 42em;
+  height: 38.7em;
   display: flex;
   flex-direction: column;
 }
@@ -22,15 +22,81 @@ h1{
 }
 
 .printProductContainer{
-  height: 24em;
+  height: 23em;
+}
+
+.clientInfoOrder{
+  background:#0095BD;
+  padding:9px 0px;
+  font-size: 1.5em;
+  height: 78px;
+  width: auto;
+  text-transform: capitalize;
+  text-align: center;
 }
 
 .printProduct{
-  height: 24em;
+  height: 17.5em;
+  overflow: auto;
+}
+/*SCROLL*/
+.printProduct::-webkit-scrollbar {
+  -webkit-appearance: none;
 }
 
-.totalCheck{
-  height: 14.3em;
+.printProduct::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+.printProduct::-webkit-scrollbar-button:increment,
+.printProduct::-webkit-scrollbar-button {
+  display: none;
+}
+
+.printProduct::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.printProduct::-webkit-scrollbar-thumb {
+  background-color: #00B5E4;
+  border-radius: 20px;
+}
+
+.printProduct::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+/*FIN SCROLL*/
+
+.printSelectedProduct{
+  background: #0187AA;
+  margin: 0px 14px 12px 0px;
+  padding: 7px 4px 7px 13px;
+}
+
+.quantityPrintProduct,
+  .textPrintProduct {
+  font-size: 1.4em;
+  font-weight: 400;
+  color:#FAFAFA;
+  padding: 0 6px;
+}
+
+.quantityPrintProduct{
+  background: #FFA093;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 1.5em;
+  padding: 4px 10px;
+}
+
+.quantityProduct{
+  width: 130px;
+  margin-right:100px;
+}
+
+.btnIncDesc{
+  color:#FAFAFA;
+  font-size: 31px;
 }
 
 .totalOrder{
@@ -40,6 +106,7 @@ h1{
   margin: 10px 0 10px 0;
   background-color: #FFA093;
   height: 56px;
+  padding-top: 9px;
 }
 
 .btn-info.custom-btn{
