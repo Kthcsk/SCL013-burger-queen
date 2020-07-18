@@ -22,12 +22,8 @@ export class WaiterComponent implements OnInit {
   }
 
   addClientInfo(){
-   // this.conection.addService(this.order);
-   this.summaryConection.pushToOrder(this.clientInfo);
+   this.summaryConection.saveClientInfo(this.clientInfo);
    console.log(this.clientInfo);
-
-    //this.order.clientName = '';
-    //this.order.tableNumber = '';
   }
 
 }
