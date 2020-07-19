@@ -24,8 +24,8 @@ export class OrderComponent implements OnInit {
 
   get total(): number {
     return this.selectedOrdersArray.reduce(
-      (accumulator, currentValue) => accumulator + currentValue.price //acumulador, valoractual
-      , 0 //valor inicial del acumulador
+      (accumulator, currentValue) => accumulator + currentValue.price // acumulador, valoractual
+      , 0 // valor inicial del acumulador
     );
   }
 
@@ -69,11 +69,11 @@ export class OrderComponent implements OnInit {
       clientName: this.summaryConection.clientInfo.clientName,
       tableNumber: this.summaryConection.clientInfo.tableNumber,
       selectedItem: this.summaryConection.summaryArray.map(item => Object.assign({}, item))
-    }
+    };
 
     this.conection.addService(orders);
-    this.summaryConection.clientInfo.clientName='';
-    this.summaryConection.clientInfo.tableNumber='';
+    this.summaryConection.clientInfo.clientName = '';
+    this.summaryConection.clientInfo.tableNumber = '';
     this.selectedOrdersArray.splice(0, this.selectedOrdersArray.length);
 
   }

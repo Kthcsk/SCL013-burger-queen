@@ -10,19 +10,19 @@
 }
 
 .btnHome {
-margin: 30px;
-width: 278px;
-height: 115px;
-color: #FAFAFA;
-background: rgba(0, 122, 155, 0.85);
-border: 5px solid #FAFAFA;
-box-sizing: border-box;
-border-radius: 4px;
-font-family: Roboto;
-font-style: normal;
-font-weight: bold;
-font-size: 50px;
-text-align: center;
+  margin: 30px;
+  width: 278px;
+  height: 115px;
+  color: #FAFAFA;
+  background: rgba(0, 122, 155, 0.85);
+  border: 5px solid #FAFAFA;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  text-align: center;
 }
 
 a {

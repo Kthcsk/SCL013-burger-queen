@@ -39,6 +39,7 @@ h1{
   height: 17.5em;
   overflow: auto;
 }
+
 /*SCROLL*/
 .printProduct::-webkit-scrollbar {
   -webkit-appearance: none;

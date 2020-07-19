@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 
-export class LineItem { //que va a contener una cantidad asociada a un producto
+export class LineItem { // que va a contener una cantidad asociada a un producto
 
   quantity: number;
 
@@ -8,7 +8,7 @@ export class LineItem { //que va a contener una cantidad asociada a un producto
     this.quantity = 1;
   }
 
-  get price(): number{ //estamos suplantando un producto con una línea de producto
+  get price(): number{ // estamos suplantando un producto con una línea de producto
     return this.product.price * this.quantity;
   }
 
@@ -33,24 +33,28 @@ export class LineItem { //que va a contener una cantidad asociada a un producto
 
 export class SummaryService {
 
-  summaryArray: Array<any> //cambiar nombre a summaryProductArray
-  clientInfo: any
+  summaryArray: Array<any>; // cambiar nombre a summaryProductArray
+  clientInfo: any;
 
   constructor() {
     this.summaryArray = [];
+    this.clientInfo = {
+      clientName: '',
+      tableNumber: null
+    }
    }
 
    saveClientInfo(info: any) {
     this.clientInfo = info;
    }
 
-   pushToOrder(product: any){ //cambiar object por product que es más descriptivo
-    const lineItem = this.summaryArray.find(lineItem => lineItem.product == product); //impide que se agregue el mismo producto
+   pushToOrder(product: any){ // cambiar object por product que es más descriptivo
+    const lineItem = this.summaryArray.find(lineItem => lineItem.product == product); // impide que se agregue el mismo producto
 
     if (lineItem) {
       lineItem.increase();
     } else {
-      this.summaryArray.push(new LineItem(product));//instancia anónima o sea sin variable
+      this.summaryArray.push(new LineItem(product)); // instancia anónima o sea sin variable
     }
 
     this.showOrder();
@@ -61,9 +65,4 @@ export class SummaryService {
     return this.summaryArray;
   }
 
-
-  /*clearOrder(){
-    this.clientInfo.clientName='';
-
-  }*/
 }
