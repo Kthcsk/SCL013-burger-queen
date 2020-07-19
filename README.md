@@ -1,6 +1,6 @@
 # Itadakimasu
 
-![Logo del proyecto](https://i.ibb.co/qRJMfXx/Frame-1.png)
+![Logo del proyecto](https://raw.githubusercontent.com/Kthcsk/SCL013-burger-queen/d784999a649120b02c7cda0a78070f8dda1d4e97/burgerQueen/src/assets/Logo-Itadakimasu.svg)
 
 ## Índice
 
@@ -10,15 +10,16 @@
 * [4. Testeos de Usabilidad con Maze](#4-testeos-de-usabilidad-con-maze)
 * [5. Imagen Final del Producto](#5-imagen-final-del-producto)
 * [6. Boilerplate](#6-boilerplate)
-* [7. Objetivos de aprendizaje](#7-objetivos-de-aprendizaje)
+* [7. Organización y planificación](#7-Organización-y-planificación)
+* [8. Objetivos de aprendizaje](#8-objetivos-de-aprendizaje)
 
 
 ***
 
 ## 1. Presentación del Producto
 
-aqui deberia ir algo
-
+La tecnología cambia y avanza casi de manera diaria, contribuyendo a mejorar a alargar el tiempo de vida y aumentando la calidad de vida de las personas, aportando herramientas que optimicen tiempos y permitan organizar la información. 
+Este proyecto nace de la necesidad de un orden y comunicación eficaz entre el equipo de meserxs y los encargados de cocina en el restaurante Itadakimasu, por lo que se ha creado una aplicación web que respondiera a esta necesidad.
 
 ## 2. Producto
 
@@ -32,7 +33,9 @@ Meserxs del restaurant de comida japonesa **Itadakimasu**, que usan cotidianamen
 
 #### 2.3. Uso y Aplicación 
 
-Aqui 
+ Esta aplicación web será utilizada principalmente por meserxs y cocinerxs del restaurante Itadakimasu. Donde podrán ingresar los pedidos de los clientes que serán posteriormente elaborados por el personal de cocina.
+ Esta apliacación permite calcular el precio de cada producto consumido por los clientes, facilitando la comunicación tanto con los comensales como con todo el equipo de trabajo.
+ Finalmente la usabilidad de esta aplicación web facilita la toma de los pedidos y facturación de los productos por parte de los meserxs, además de la lectura y aviso de realización del pedido por parte del personal de cocina.
 
 #### 2.4. Historias de Usuario
 
@@ -79,17 +82,17 @@ Yo como jefx de cocina **quiero** ver los pedidos de los clientes en orden y mar
 
 ### 3.1 Decisiones de diseño
 
-**Nombre:** Itadakimasu (por qué el nombre)
+El proceso de diseño fue acorde a la estética del restaurant, incluyendo su logo y su paleta de colores representativos, asociando así el aspecto visual de la aplicación con este. También, se definió una guia de estilos en donde se agruparon los componentes de nuestra aplicación, facilitando su uso en distintas pantallas.
 
-**no se logo:** 
+![imgLogos](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Logotipo.png?raw=true)
 
 **Guía de estilos:** 
 
-![imgGuíaDeEstilo](aqui)
+![imgGuíaDeEstilo](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Gu%C3%ADa%20de%20Estilos.png?raw=true)
 
 ### 3.2 Flujograma
 
-![imgFlujo](aqui)
+![imgFlujo](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Flujograma.png?raw=true)
 
 [Link de Lucidchart](https://app.lucidchart.com/documents/edit/c2fbaa0b-4503-4ceb-ab84-14eab1f6ac5d/0_0?shared=true&docId=c2fbaa0b-4503-4ceb-ab84-14eab1f6ac5d)
 
@@ -97,13 +100,17 @@ Yo como jefx de cocina **quiero** ver los pedidos de los clientes en orden y mar
 
 #### 3.3.1 Baja fidelidad
 
-![imgBaja]()
+![imgBaja](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/prototipo-baja1.png?raw=true)
+
+![imgBaja2](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/prototipo-baja2.png?raw=true)
+
+![imgBaja3](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/prototipo-baja3.png?raw=true)
 
 [Link de InVision](https://constla102931.invisionapp.com/freehand/Burguer-Queen-i7iaZ6jG5?frame-cb=1595122402678)
 
 #### 3.3.2 Alta fidelidad
 
-![imgBaja1](aqui)
+![imgAlta1](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/prototipo-alta.png?raw=true)
 
 [Link de Figma](https://www.figma.com/file/nxKj6CC1r57BlV6G51j2dB/Prototipo-de-alta?node-id=0%3A1)
 
@@ -111,12 +118,12 @@ Yo como jefx de cocina **quiero** ver los pedidos de los clientes en orden y mar
 
 ## 4. Testeos de Usabilidad con Maze
 
-Explicación de como aporto el testeo
+El testeo de usuarios fue aplicado a 14 usuarios, teniendo así un puntaje de 83 en usabilidad donde se midió duración, click fallidos y feedback, este último siendo utilizado para iterar en nuestra app y cambiando algunas vistas para mayor accesibilidad.
 
-![imgMaze1](aqui)
-![imgMaze2](aquig)
-![imgMaze2](aqui)
-![imgMaze2](aqui)
+![imgMaze1](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Reporte-Maze-1.png?raw=true)
+![imgMaze2](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Reporte-Maze-2.png?raw=true)
+![imgMaze2](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Reporte-Maze-3.png?raw=true)
+![imgMaze2](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Reporte-Maze-4.png?raw=true)
 
 [Link de reporte en Maze](https://maze.design/r/953994kc0zawnp)
 
@@ -124,86 +131,101 @@ Explicación de como aporto el testeo
 
 ## 5. Imagen Final del Producto
 
-Visita [aqui]() la aplicación Itadakimasu
+Visita [aquí]() la aplicación Itadakimasu
 
-![img1](aqui)
-![img2](aqui)
-![img3](aqui)
-![img4](aqui)
-![img5](aqui)
+![img1](burgerQueen\src\assets\Readme\Producto-final-2.png)
+![img2](burgerQueen\src\assets\Readme\Producto-final-3.png)
+![img3](burgerQueen\src\assets\Readme\Producto-final-4.png)
+![img4](burgerQueen\src\assets\Readme\Producto-final-5.png)
 
 ***
 
 ## 6. Boilerplate
 
-![img1](aqui)
+![img1](burgerQueen\src\assets\Readme\Boilerplate-1.png)
+![img2](burgerQueen\src\assets\Readme\Boilerplate-2.png)
 
 ***
 
-## 7. Objetivos de aprendizaje
+## 7. Organización y planificación
+
+La Planificación de nuestro equipo se basó en metodologías agiles, tomando cada integrante del equipo un rol del equipo Scrum. Para lograr lo anterior ocupamos herramientas como Miró y Trello.
+
+![imgMiró](burgerQueen\src\assets\Readme\Miro.png)
+
+- [Puedes verlo más a detalle aquí](https://miro.com/welcomeonboard/Zs540cNG814ECXo5iXIwsCWcAeRC2FXUeYCkRaaAopxSMmWlJKYjRZlh7yKZ36OD)
+
+![imgTrello](burgerQueen\src\assets\Readme\Trello.png)
+- [Nuestro Trello](https://trello.com/invite/b/hINR3t3C/bae21f9846d32badc897ea2af1338cf8/burger-queen)
+
+***
+
+## 8. Objetivos de aprendizaje
 
 ### HTML y CSS
 
-* [x] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
-* [x] Uso de selectores de CSS.
-* [x] Construir tu aplicación respetando el diseño realizado (maquetación).
-* [x] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-* [ ] [Uso de Media Queries.](https://developer.mozilla.org/es/docs/CSS/Media_queries)
+- [x] [Uso de HTML semántico.](https://developer.mozilla.org/en-US/docs/Glossary/Semantics#Semantics_in_HTML)
+- [x] Uso de selectores de CSS.
+- [x] Construir tu aplicación respetando el diseño realizado (maquetación).
+- [x] [Uso de flexbox en CSS.](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [ ] [Uso de Media Queries.](https://developer.mozilla.org/es/docs/CSS/Media_queries)
 
 ### JavaScript
 
-* [x] Uso de condicionales (if-else | switch | operador ternario)
-* [x] Uso de funciones (parámetros | argumentos | valor de retorno)
-* [x] Manipular arrays (filter | map | sort | reduce)
-* [x] Manipular objects (key | value)
-* [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+- [x] Uso de condicionales (if-else | switch | operador ternario)
+- [x] Uso de funciones (parámetros | argumentos | valor de retorno)
+- [x] Manipular arrays (filter | map | sort | reduce)
+- [x] Manipular objects (key | value)
+- [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [ ] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
-* [x] [Uso de callbacks.](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
-* [ ] [Consumo de Promesas.](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
+- [ ] Diferenciar entre expression y statements.
+- [ ] Diferenciar entre tipos de datos atómicos y estructurados.
+- [x] [Uso de callbacks.](https://developer.mozilla.org/es/docs/Glossary/Callback_function)
+- [ ] [Consumo de Promesas.](https://scotch.io/tutorials/javascript-promises-for-dummies#toc-consuming-promises)
 
 ### Testing
 
-* [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
+- [ ] [Testeo unitario.](https://jestjs.io/docs/es-ES/getting-started)
 
 ### Estructura del código y guía de estilo
 
-* [x] Organizar y dividir el código en módulos (Modularización)
-* [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [x] Uso de linter (ESLINT)
+- [x] Organizar y dividir el código en módulos (Modularización)
+- [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+- [x] Uso de linter (ESLINT)
 
 ### Git y Github
 
-* [x] Uso de comandos de git (add | commit | pull | status | push)
-* [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
-* [x] Colaboración en Github (branches | pull requests | |tags)
-* [x] Organización en Github (projects | issues | labels | milestones)
+- [x] Uso de comandos de git (add | commit | pull | status | push)
+- [x] Manejo de repositorios de GitHub (clone | fork | gh-pages)
+- [x] Colaboración en Github (branches | pull requests | |tags)
+- [x] Organización en Github (projects | issues | labels | milestones)
 
 ### Firebase
 
-* [x] [Firestore.](https://firebase.google.com/docs/firestore)
-* [ ] [Firebase Auth.](https://firebase.google.com/docs/auth/web/start)
-* [x] [Firebase security rules.](https://firebase.google.com/docs/rules)
-* [x] Observadores. ([onAuthStateChanged](https://firebase.google.com/docs/auth/web/manage-users?hl=es#get_the_currently_signed-in_user)
+- [x] [Firestore.](https://firebase.google.com/docs/firestore)
+- [ ] [Firebase Auth.](https://firebase.google.com/docs/auth/web/start)
+- [x] [Firebase security rules.](https://firebase.google.com/docs/rules)
+- [x] Observadores. ([onAuthStateChanged](https://firebase.google.com/docs/auth/web/manage-users?hl=es#get_the_currently_signed-in_user)
  | [onSnapshot](https://firebase.google.com/docs/firestore/query-data/listen#listen_to_multiple_documents_in_a_collection))
 
 ### Angular
 
-* [x] [Components & templates.](https://angular.io/guide/architecture-components#introduction-to-components)
-* [x] [Directivas estructurales (ngIf / ngFor)](https://angular.io/guide/template-syntax#built-in-structural-directives)
-* [ ] [@Input | @Ouput](https://angular.io/guide/component-interaction#component-interaction)
-* [x] [Creación y uso de servicios.](https://angular.io/guide/architecture-services#providing-services)
-* [x] [Manejos de rutas.](https://angular.io/guide/router)
-* [x] [Creación y uso Observables.](https://angular.io/guide/observables-in-angular)
-* [x] [Uso de HttpClient.](https://angular.io/guide/http)
-* [x] [Estilos de componentes (ngStyle / ngClass)](https://angular.io/guide/template-syntax#built-in-directives)
+- [x] [Components & templates.](https://angular.io/guide/architecture-components#introduction-to-components)
+- [x] [Directivas estructurales (ngIf / ngFor)](https://angular.io/guide/template-syntax#built-in-structural-directives)
+- [ ] [@Input | @Ouput](https://angular.io/guide/component-interaction#component-interaction)
+- [x] [Creación y uso de servicios.](https://angular.io/guide/architecture-services#providing-services)
+- [x] [Manejos de rutas.](https://angular.io/guide/router)
+- [x] [Creación y uso Observables.](https://angular.io/guide/observables-in-angular)
+- [x] [Uso de HttpClient.](https://angular.io/guide/http)
+- [x] [Estilos de componentes (ngStyle / ngClass)](https://angular.io/guide/template-syntax#built-in-directives)
 
 ### UX
 
-* [x] Diseñar la aplicación pensando y entendiendo al usuario.
-* [x] Crear prototipos para obtener feedback e iterar.
-* [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
-* [x] Planear y ejecutar tests de usabilidad.
+- [x] Diseñar la aplicación pensando y entendiendo al usuario.
+- [x] Crear prototipos para obtener feedback e iterar.
+- [x] Aplicar los principios de diseño visual (contraste, alineación, jerarquía)
+- [x] Planear y ejecutar tests de usabilidad.
+
+
 
 ***
