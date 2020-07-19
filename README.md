@@ -133,17 +133,17 @@ El testeo de usuarios fue aplicado a 14 usuarios, teniendo así un puntaje de 83
 
 Visita [aquí]() la aplicación Itadakimasu
 
-![img1](burgerQueen\src\assets\Readme\Producto-final-2.png)
-![img2](burgerQueen\src\assets\Readme\Producto-final-3.png)
-![img3](burgerQueen\src\assets\Readme\Producto-final-4.png)
-![img4](burgerQueen\src\assets\Readme\Producto-final-5.png)
+![img1](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Producto-final-2.png?raw=true)
+![img2](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Producto-final-3.png?raw=true)
+![img3](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Producto-final-4.png?raw=true)
+![img4](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Producto-final-5.png?raw=true)
 
 ***
 
 ## 6. Boilerplate
 
-![img1](burgerQueen\src\assets\Readme\Boilerplate-1.png)
-![img2](burgerQueen\src\assets\Readme\Boilerplate-2.png)
+![img1](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Boilerplate-1.png?raw=true)
+![img2](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Boilerplate-2.png?raw=true)
 
 ***
 
@@ -151,11 +151,12 @@ Visita [aquí]() la aplicación Itadakimasu
 
 La Planificación de nuestro equipo se basó en metodologías agiles, tomando cada integrante del equipo un rol del equipo Scrum. Para lograr lo anterior ocupamos herramientas como Miró y Trello.
 
-![imgMiró](burgerQueen\src\assets\Readme\Miro.png)
+![imgMiró](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Miro.png?raw=true)
 
 - [Puedes verlo más a detalle aquí](https://miro.com/welcomeonboard/Zs540cNG814ECXo5iXIwsCWcAeRC2FXUeYCkRaaAopxSMmWlJKYjRZlh7yKZ36OD)
 
-![imgTrello](burgerQueen\src\assets\Readme\Trello.png)
+![imgTrello](https://github.com/Kthcsk/SCL013-burger-queen/blob/master/burgerQueen/src/assets/Readme/Trello.png?raw=true)
+
 - [Nuestro Trello](https://trello.com/invite/b/hINR3t3C/bae21f9846d32badc897ea2af1338cf8/burger-queen)
 
 ***
