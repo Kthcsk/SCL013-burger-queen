@@ -17,7 +17,7 @@ h6{
 .container-waiter{
   background: rgba(0, 123, 155, 0.97);
   width: 711px;
-  height: 40em;
+  height: 38.7em;
 }
 
 .banner-container{
@@ -34,7 +34,7 @@ h6{
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin: 15px 0;
+  margin: 18px;
 }
 
 .clientName{
@@ -110,9 +110,28 @@ margin: 0;
 }
 
 .submitBtn{
-  width: 60px;
   background: none;
   border: none;
+  outline: none;
+}
+
+.correctBtn{
+  display: flex;
+  align-items: flex-end;
+  height: auto;
+  margin-bottom: 0px;
+}
+
+.svgBtn{
+  font-size: 55px;
+}
+
+input{
+  text-transform: capitalize;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+  text-transform: none;
 }
 
 

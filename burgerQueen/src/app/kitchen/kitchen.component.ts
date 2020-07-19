@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { SummaryService } from '../services/summary.service';
+import { ConectionService, ClientOrder } from '../services/conection.service';
 
 @Component({
   selector: 'app-kitchen',
@@ -7,7 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KitchenComponent implements OnInit {
 
-  constructor() { }
+  clientInfo: any;
+  ordersObserverData: ClientOrder[];
+  selectedOrdersArray = [];
+
+  constructor(private conectionService: ConectionService, public conectionSummary: SummaryService) {
+    this.conectionService.waiterOrder().subscribe(orders => {
+      this.ordersObserverData = orders;
+      console.log(this.ordersObserverData);
+    });
+  }
 
   ngOnInit(): void {
   }
