@@ -13,11 +13,9 @@ export class MenuDrinksComponent implements OnInit {
 
   constructor(
     private menuDrinksService: MenuDrinksService,
-    public summaryConection: SummaryService)
-    {
+    public summaryConection: SummaryService){
     this.menuDrinksService.drinksMenu().subscribe(answer=>{
       this.drinksDataCall = answer["drinks"]
-      console.log(answer);
     })
    }
 

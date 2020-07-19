@@ -1,21 +1,26 @@
 <div class="container-kitchen">
+
   <div class="banner-container">
     <h1>COCINA</h1>
   </div>
 
   <div class="containerKitchenCards">
+
     <div class="kitchenCard" *ngFor="let order of ordersObserverData; index as i">
       <div class="bannerCard">
+
         <div class="textBannerCard">
           <div class="clientInfo">
-            <span> NOMBRE DE CLIENTE: {{order.clientName}}</span>
-            <span> NÚMERO DE MESA: {{order.tableNumber}}</span>
+            <span><strong>NOMBRE DE CLIENTE:&nbsp;&nbsp;</strong>{{order.clientName}}</span>
+            <span><strong>NÚMERO DE MESA:&nbsp;&nbsp;</strong>{{order.tableNumber}}</span>
           </div>
           <div class="orderNumber">
             <span> NÚMERO DE PEDIDO <br> {{i + 1}}</span>
           </div>
         </div>
+
       </div>
+
       <div class="productCard">
         <tr>
           <td colspan="3">
@@ -30,7 +35,9 @@
           </td>
         </tr>
       </div>
+
     </div>
+
   </div>
 </div>
 

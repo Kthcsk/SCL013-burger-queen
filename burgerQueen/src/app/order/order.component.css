@@ -27,9 +27,9 @@ h1{
 
 .clientInfoOrder{
   background:#0095BD;
-  padding:9px 0px;
+  padding:0.5em 0em;
   font-size: 1.5em;
-  height: 78px;
+  height: 3.5em;
   width: auto;
   text-transform: capitalize;
   text-align: center;
@@ -46,7 +46,7 @@ h1{
 }
 
 .printProduct::-webkit-scrollbar:vertical {
-  width:10px;
+  width:0.6em;
 }
 
 .printProduct::-webkit-scrollbar-button:increment,
@@ -55,23 +55,23 @@ h1{
 }
 
 .printProduct::-webkit-scrollbar:horizontal {
-  height: 10px;
+  height: 0.6em;
 }
 
 .printProduct::-webkit-scrollbar-thumb {
   background-color: #00B5E4;
-  border-radius: 20px;
+  border-radius: 1.2em;
 }
 
 .printProduct::-webkit-scrollbar-track {
-  border-radius: 10px;
+  border-radius: 0.6em;
 }
 /*FIN SCROLL*/
 
 .printSelectedProduct{
   background: #0187AA;
-  margin: 0px 14px 12px 0px;
-  padding: 7px 4px 7px 13px;
+  margin: 0px 0.8em 0.7em 0em;
+  padding: 0.4em 0.2em 0.4em 0.8em;
 }
 
 .quantityPrintProduct,
@@ -79,35 +79,35 @@ h1{
   font-size: 1.4em;
   font-weight: 400;
   color:#FAFAFA;
-  padding: 0 6px;
+  padding: 0 0.3em;
 }
 
 .quantityPrintProduct{
   background: #FFA093;
-  border-radius: 5px;
-  margin: 5px;
+  border-radius: 0.3em;
+  margin: 0.3em;
   font-size: 1.5em;
-  padding: 4px 10px;
+  padding: 0.2em 0.5em;
 }
 
 .quantityProduct{
-  width: 130px;
-  margin-right:100px;
+  width: 8.1em;
+  margin-right:6.2em;
 }
 
 .btnIncDesc{
   color:#FAFAFA;
-  font-size: 31px;
+  font-size: 1.9em;
 }
 
 .totalOrder{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin: 10px 0 10px 0;
+  margin: 0.6em 0 0.6em 0;
   background-color: #FFA093;
-  height: 56px;
-  padding-top: 9px;
+  height: 3.5em;
+  padding-top: 0.56em;
 }
 
 .btn-info.custom-btn{
@@ -115,9 +115,9 @@ h1{
   border-color: #FAFAFA;
   border-style: solid 5px;
   background-color: #006B87;
-  height: 87px;
-  width: 278px;
-  font-size: 30px;
+  height: 2.5em;
+  width: 11em;
+  font-size: 1.87em;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 0.62em;
 }

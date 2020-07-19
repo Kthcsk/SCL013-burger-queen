@@ -1,14 +1,13 @@
 import { Injectable } from '@angular/core';
 
-export class LineItem { // que va a contener una cantidad asociada a un producto
-
+export class LineItem {
   quantity: number;
 
   constructor(public product: any){
     this.quantity = 1;
   }
 
-  get price(): number{ // estamos suplantando un producto con una línea de producto
+  get price(): number{
     return this.product.price * this.quantity;
   }
 
@@ -33,7 +32,7 @@ export class LineItem { // que va a contener una cantidad asociada a un producto
 
 export class SummaryService {
 
-  summaryArray: Array<any>; // cambiar nombre a summaryProductArray
+  summaryArray: Array<any>;
   clientInfo: any;
 
   constructor() {
@@ -48,20 +47,19 @@ export class SummaryService {
     this.clientInfo = info;
    }
 
-   pushToOrder(product: any){ // cambiar object por product que es más descriptivo
-    const lineItem = this.summaryArray.find(lineItem => lineItem.product == product); // impide que se agregue el mismo producto
+   pushToOrder(product: any){
+    const lineItem = this.summaryArray.find(lineItem => lineItem.product == product);
 
     if (lineItem) {
       lineItem.increase();
     } else {
-      this.summaryArray.push(new LineItem(product)); // instancia anónima o sea sin variable
+      this.summaryArray.push(new LineItem(product));
     }
 
     this.showOrder();
   }
 
   showOrder(){
-    console.log(this.summaryArray)
     return this.summaryArray;
   }
 

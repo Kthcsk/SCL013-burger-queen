@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { MenuAppetizersService } from '../services/menu-appetizers.service';
 import { SummaryService } from '../services/summary.service';
 
-
 @Component({
   selector: 'app-menu-appetizers',
   templateUrl: './menu-appetizers.component.html',
@@ -14,11 +13,9 @@ export class MenuAppetizersComponent implements OnInit {
 
   constructor(
     private menuAppetizersService: MenuAppetizersService,
-    public summaryConection: SummaryService )
-    {
+    public summaryConection: SummaryService){
     this.menuAppetizersService.appetizersMenu().subscribe(answer=>{
       this.appetizersDataCall = answer["appetizers"]
-      console.log(answer);
     })
    }
 
@@ -28,6 +25,5 @@ export class MenuAppetizersComponent implements OnInit {
   sendProduct(object){
     this.summaryConection.pushToOrder(object)
   }
-
 
 }
