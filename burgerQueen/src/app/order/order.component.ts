@@ -24,8 +24,8 @@ export class OrderComponent implements OnInit {
 
   get total(): number {
     return this.selectedOrdersArray.reduce(
-      (accumulator, currentValue) => accumulator + currentValue.price // acumulador, valoractual
-      , 0 // valor inicial del acumulador
+      (accumulator, currentValue) => accumulator + currentValue.price
+      , 0
     );
   }
 
@@ -47,12 +47,7 @@ export class OrderComponent implements OnInit {
   constructor(
     public summaryConection: SummaryService,
     public db: AngularFirestore,
-    private conection: ConectionService )
-   {
-   /*  this.conection.waiterOrder().subscribe(item => {
-      this.orders = item;
-      console.log(this.orders)
-    }) */
+    private conection: ConectionService){
     this.observerDoc = db.collection('orders').valueChanges();
    }
 
@@ -77,6 +72,5 @@ export class OrderComponent implements OnInit {
     this.selectedOrdersArray.splice(0, this.selectedOrdersArray.length);
 
   }
-
 
 }

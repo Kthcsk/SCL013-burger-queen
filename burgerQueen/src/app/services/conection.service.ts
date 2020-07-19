@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreDocument } from '@angular/fire/firestore';
+import { AngularFirestore, AngularFirestoreCollection} from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
-export interface ClientOrder { // Aquí van los campos de la colección y su tipo de value
+export interface ClientOrder {
   clientName: string;
   tableNumber: number;
   selectedItem: Array<object>;
@@ -14,12 +14,10 @@ export interface ClientOrder { // Aquí van los campos de la colección y su tip
 })
 export class ConectionService {
 
-  private docClientOrder: AngularFirestoreDocument<ClientOrder>;
-  // Aquí en la var privada va la colección que referencia a la interfase
   private ordersCollectionFirestore: AngularFirestoreCollection<ClientOrder>;
-  ordersObserverData: Observable<ClientOrder[]>; // Aquí orders guarda el observable, la interfase guardaría las propiedades de la interfase
-                               // en un array
-  constructor(private afs: AngularFirestore) { // afs angular-firestore
+  ordersObserverData: Observable<ClientOrder[]>;
+
+  constructor(private afs: AngularFirestore) {
     this.ordersCollectionFirestore = afs.collection<ClientOrder>('orders');
     this.ordersObserverData = this.ordersCollectionFirestore.snapshotChanges().pipe(
       map(actions => actions.map(a => {
@@ -28,10 +26,9 @@ export class ConectionService {
         return { id, ...data };
       }))
     );
-
   }
 
-  waiterOrder(){ // Ocupar esta función para cuando retomemos firebase
+  waiterOrder(){
     return this.ordersObserverData;
   }
 

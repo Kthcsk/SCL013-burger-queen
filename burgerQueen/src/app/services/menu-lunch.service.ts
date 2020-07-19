@@ -7,7 +7,6 @@ import { HttpClient } from '@angular/common/http';
 export class MenuLunchService {
 
   constructor(private http: HttpClient) {
-    console.log("service running");
   }
 
   lunchMenu(){

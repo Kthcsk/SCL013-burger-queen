@@ -13,10 +13,11 @@ export class KitchenComponent implements OnInit {
   ordersObserverData: ClientOrder[];
   selectedOrdersArray = [];
 
-  constructor(private conectionService: ConectionService, public conectionSummary: SummaryService) {
+  constructor(
+    private conectionService: ConectionService,
+    public conectionSummary: SummaryService){
     this.conectionService.waiterOrder().subscribe(orders => {
       this.ordersObserverData = orders;
-      console.log(this.ordersObserverData);
     });
   }
 
