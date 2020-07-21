@@ -1,4 +1,4 @@
-/*imports de angular*/
+/*librerias externas de angular*/
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -21,9 +21,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { environment } from '../environments/environment';
 import { KitchenComponent } from './kitchen/kitchen.component';
 
-
+// decorador que marca una clase como un ngModul, que identifica los componentes, las directivas, los pipes (los hace publicas para poder exportar)
+// configura el inyector de dependencias y el compilador que ayuda a relacionar las cosas juntas
 @NgModule({
-  declarations: [
+  declarations: [ // componentes unicos de la app
     AppComponent,
     BannerComponent,
     WaiterComponent,
@@ -34,16 +35,16 @@ import { KitchenComponent } from './kitchen/kitchen.component';
     MenuLunchComponent,
     KitchenComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
+  imports: [ // le dice a angular acerca de los otros ngModul que necesita un modulo en particular para funcionar correctamente
+    BrowserModule, // para tener servicios especificos de navegador (como el render en el DOM)
+    AppRoutingModule, // enrutador
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule // (ocupa HttpClient) es el inyector de dependencias
   ],
-  providers: [
+  providers: [ // proveedores de servicios
     ConectionService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent] // bootstrap: componente raiz que crea angular y lo inserta en html
 })
 export class AppModule { }
