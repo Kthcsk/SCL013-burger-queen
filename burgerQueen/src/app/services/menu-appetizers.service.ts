@@ -6,11 +6,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class MenuAppetizersService {
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient) { // hace consultas http
+    console.log("service running");
+
   }
 
   appetizersMenu(){
-    return this.http.get('../../assets/Data/menu-data-appetizers.json')
+    return this.http.get('../../assets/Data/menu-data-appetizers.json') // retorna el json
   }
 
 }

@@ -19,7 +19,7 @@ export class WaiterComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  addClientInfo(){
+  addClientInfo(){ // agrega los datos de los inputs (de clientInfo), por medio del servicio, toma como parametro clientInfo (linea 12)
    this.summaryConection.saveClientInfo(this.clientInfo);
    console.log(this.clientInfo);
   }

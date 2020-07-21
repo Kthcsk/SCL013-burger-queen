@@ -6,7 +6,8 @@
 
   <div class="containerKitchenCards">
 
-    <div class="kitchenCard" *ngFor="let order of ordersObserverData; index as i">
+    <div class="kitchenCard" *ngFor="let order of ordersObserverData; index as i"><!--declaro variable order, recorriendo ordersObserverData(interface)-->
+
       <div class="bannerCard">
 
         <div class="textBannerCard">
@@ -15,7 +16,7 @@
             <span><strong>NÚMERO DE MESA:&nbsp;&nbsp;</strong>{{order.tableNumber}}</span>
           </div>
           <div class="orderNumber">
-            <span> NÚMERO DE PEDIDO <br> {{i + 1}}</span>
+            <span> NÚMERO DE PEDIDO <br> {{i + 1}}</span><!--obtener el número de pedido-->
           </div>
         </div>
 
@@ -26,7 +27,7 @@
           <td colspan="3">
             <table style="width: 100%;">
               <tbody>
-                <tr *ngFor="let lineItem of order.selectedItem">
+                <tr *ngFor="let lineItem of order.selectedItem"><!--recorre linea por linea de productos (order de ngFor de arriba) selectedItem(de conection.service) trae cantidad y nombre de producto-->
                   <td class="numberText">{{lineItem.quantity}}</td>
                   <td>{{lineItem.product.name}}</td>
                 </tr>
