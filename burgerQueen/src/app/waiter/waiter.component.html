@@ -4,6 +4,7 @@
     <div class="banner-container">
       <h1>MESERO</h1>
     </div>
+
     <div>
       <form class="clientContainer" (ngSubmit)= "addClientInfo()">
         <div class="clientName">
@@ -14,7 +15,7 @@
         </div>
         <div class="tableNumber">
           <h6>N° MESA</h6>
-          <input type="number" autocomplete="off" placeholder="Escribe el número"
+          <input class="inputNumer"type="number" autocomplete="off" placeholder="Escribe el número"
           name="tableNumber"
           [(ngModel)]="clientInfo.tableNumber">
         </div>
@@ -29,13 +30,14 @@
           </div>
         </div>
       </form>
-
     </div>
+
     <div class="menuNavBar">
       <a class="btnMenu" routerLink='drinks' routerLinkActive="router-link-active">BEBESTIBLES</a>
       <a  class="btnMenu" routerLink='appetizers' routerLinkActive="router-link-active">APERITIVO</a>
       <a  class="btnMenu" routerLink='lunch' routerLinkActive="router-link-active">ALMUERZO</a>
     </div>
+
     <div>
       <router-outlet></router-outlet>
     </div>

@@ -8,6 +8,7 @@ export class MenuAppetizersService {
 
   constructor(private http: HttpClient) { // hace consultas http
     console.log("service running");
+
   }
 
   appetizersMenu(){

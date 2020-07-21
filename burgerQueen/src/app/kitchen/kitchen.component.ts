@@ -16,9 +16,10 @@ export class KitchenComponent implements OnInit {  // OnInit: es un enlace de ci
   constructor(
     private conectionService: ConectionService,
     public conectionSummary: SummaryService){
+
     this.conectionService.waiterOrder().subscribe(orders => { // del servicio conectionService ejecutamos waiterOrder
+
       this.ordersObserverData = orders;
-      console.log(this.ordersObserverData);
     });
   }
 

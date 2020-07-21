@@ -26,6 +26,7 @@ export class OrderComponent implements OnInit {
     return this.selectedOrdersArray.reduce( // toma el array y con .reduce suma todo lo que esta dentro de él
       (accumulator, currentValue) => accumulator + currentValue.price // todo lo que esta dentro del arra, toma el producto y precio y va a sumar su valor actual según su cantidad
       , 0 // valor inicial del acumulador
+
     );
   }// estos 3 get renderizan los datos en order.component.hmtl
 
@@ -49,6 +50,7 @@ export class OrderComponent implements OnInit {
     public db: AngularFirestore, // llamando a la librería del angular fire
     private conection: ConectionService ){// es privado porque representa la conección con el servicio y la base de datos
     this.observerDoc = db.collection('orders').valueChanges(); // llama al orservador de documentos de la colección de firebase ("orders") | .valueChanges escuchador de lo que esta pasando en los documentos de la colección orders y la posible consulta
+
    }
 
   ngOnInit(): void {
@@ -72,6 +74,5 @@ export class OrderComponent implements OnInit {
     this.selectedOrdersArray.splice(0, this.selectedOrdersArray.length); // despues de mandar los datos, se limpian los campos, con el método splice, que elimina elementos de un array, primer parametro: 0: desde donde comienza a borrar elementos, en el segundo parametro: que borre el largo del elemento
 
   }
-
 
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ConectionService } from '../services/conection.service';
 import { SummaryService } from '../services/summary.service';
 
 @Component({
@@ -9,13 +8,12 @@ import { SummaryService } from '../services/summary.service';
 })
 export class WaiterComponent implements OnInit {
 
-  clientInfo: any = { //hacemos una propiedad o característica o atributos, que sea any=cualquier tipo
+  clientInfo: any = {
     clientName:'',
     tableNumber:''
   }
 
   constructor(public summaryConection: SummaryService){
-
   }
 
   ngOnInit(): void {
